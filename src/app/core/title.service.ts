@@ -1,7 +1,6 @@
 import { Injectable, Injector } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 import { ActivatedRoute } from "@angular/router";
-import { TranslateService } from "@ngx-translate/core";
 import { isString } from "lodash"
 
 
@@ -15,7 +14,6 @@ export class TitleService {
   constructor(
     private title: Title,
     private injector: Injector,
-    private translate: TranslateService,
   ) {}
 
   /**
@@ -30,7 +28,7 @@ export class TitleService {
       next = next.parent;
       realTitle = this.fetchTitle(next);
     }
-    return this.translate.instant(realTitle);
+    return realTitle;
   }
 
   private fetchTitle(route: ActivatedRoute): string {

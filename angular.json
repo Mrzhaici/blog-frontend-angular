@@ -8,6 +8,9 @@
   "newProjectRoot": "projects",
   "projects": {
     "Myblog": {
+       "i18n": {
+        "sourceLocale": "zh-Hans"
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -47,7 +50,8 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "less",
@@ -61,7 +65,8 @@
               }
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "src/bootstrap.min.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -123,7 +128,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "less",
@@ -132,7 +138,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "src/bootstrap.min.css"
             ],
             "scripts": []
           }

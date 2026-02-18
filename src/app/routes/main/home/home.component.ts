@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+
 
 @Component({
-  selector: 'blog-home',
+  selector: 'blog-main',
   standalone: true,
-  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.less'
 })
