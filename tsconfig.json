@@ -25,10 +25,13 @@
       "dom"
     ],
     "paths": { // 设置路径映射， 映射是相对于"baseUrl"的设置
-    "@node_module/*": [
-      "node_module/*"
-    ],
-  }
+      "@node_module/*": [
+        "./node_module/*"
+      ],
+      "@src/*": [
+        "./src/*"
+      ],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

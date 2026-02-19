@@ -1,13 +1,9 @@
 {
-  "attribute-directive.greeting": "Hola {{name}}, ¡esto es una directiva de atributos!",
-  "attribute-directive.title": "Directivas de atributos",
-  "in-code.text": "Traducción en código: Esto es mambo #{{count}}",
-  "locale-switch.label": "Elija su idioma",
-  "main.greeting": "Hola {{name}}, ¡ve lo fácil que es traducir tu aplicación Angular!",
-  "main.title": "Ejemplo de Angular + Transloco",
-  "message.pluralization": "¡Tienes {count, plural, =0 {ninguna manzana} one {una manzana} other {# manzanas}}!",
-  "message.select": "Me gusta el helado de {flavor, select, vanilla {vainilla} strawberry {fresa} other {todos los sabores de}}.",
-  "message.title": "Formato de mensajes ICU",
-  "pipe.greeting": "Hola {{name}}, ¡ya estamos usando tuberías!",
-  "pipe.title": "Tubos de traducción"
+  "blog.home": "首页",
+  "blog.article": "博客文章",
+  "blog.photography.show": "摄影展示",
+  "blog.introduction": "作者简介",
+  "blog.control.panel": "博客后台",
+  "blog.transloco.achieve": "多语言加载成功！",
+  "blog.sunset.west": "夕日西"
 }

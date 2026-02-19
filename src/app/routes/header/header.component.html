@@ -1,1 +1,26 @@
-<b>header</b>
+<nav>
+  <div>
+    <div class="logo">
+      <a href="#">
+        <img src="../../../favicon.png" alt='{{"blog.sunset.west" | transloco}}'>
+        <span>{{"blog.sunset.west" | transloco}}</span>
+      </a>
+    </div>
+    <div class="nav">
+      <ul>
+        <li *ngFor="let item of nav">
+          <span>
+            {{item.name | transloco}}
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <span>
+        {{"blog.control.panel" | transloco}}
+      </span>
+    </div>
+  </div>
+</nav>
+
+<div></div>

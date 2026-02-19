@@ -8,10 +8,10 @@ export class TranslocoLangService {
   constructor(
     private translocoService: TranslocoService
   ) {
-    translocoService.selectTranslate('in-code.text', { count: 5 })
-      .subscribe((text) => {
-        console.log("text:", text);
-      });
+  //   translocoService.selectTranslate('blog.transloco.achieve', { count: 5 })
+  //     .subscribe((text) => {
+  //       console.log("text:", text);
+  //     });
   }
 
   

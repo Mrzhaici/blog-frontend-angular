@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslocoLangService } from './core/translocoService';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -15,7 +14,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
 
-  constructor(public translocoLangService: TranslocoLangService) {
+  constructor() {
 
   }
 
