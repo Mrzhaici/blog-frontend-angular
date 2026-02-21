@@ -1,22 +1,31 @@
 nav {
-  height: 3.5em;
-  background-color: antiquewhite;
+  height: 4.5rem;
+  background-color: rgba(244, 244, 244, 0.158);
+  color: white;
+  box-shadow: 0px 5px 8px rgba(131, 131, 131, 0.523);
+
+  div {
+    height: 100%;
+    font-size: 20px;
+  }
 
   >div {
-    height: 100%;
+    margin: 0 auto;
+    max-width: 72rem;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    padding: 0 30px;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 0 80px;
 
     >div.logo {
+      min-width: 120px;
       display: flex;
       align-items: center; // 垂直（上下）居中（核心属性）
+      // justify-content: flex-start;
+      justify-content: center;
 
       a {
         text-decoration: none;
         // 可选：统一设置链接文字颜色（避免默认蓝色）
-        color: #333;
-        font-size: 20px;
 
         img {
           width: 40px; // 宽度（推荐只设宽度，高度自动等比）
@@ -24,25 +33,32 @@ nav {
           vertical-align: middle; // 与文字垂直居中对齐（推荐）
         }
 
-        span {
-          vertical-align: middle; // 与文字垂直居中对齐（推荐）
-          margin-left: 0.5em;
-          font-weight: bold; // 关键字，等价于 700
+        .svgLogo {
+          vertical-align: middle;
+          color: white;
         }
       }
     }
 
     >.nav {
+      justify-content: center;
+      display: flex;
+
       ul {
-        display: flex;
+        width: 100%;
+        max-width: 450px;
+        height: 100%;
         list-style-type: none;
-        display: flex;
         padding: 0;
-        justify-content: center;
+        margin: 0;
+        display: flex;
 
         li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
           flex: 1;
-          text-align: center;
 
           span {
             padding: 0 5px;
@@ -57,6 +73,7 @@ nav {
       display: flex;
       justify-content: right; // 水平居中
       align-items: center; // 垂直居中
+      text-align: center;
 
       span {
         padding: 0 5px;
